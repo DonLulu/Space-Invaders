@@ -10,26 +10,15 @@ public class Invader : MonoBehaviour
     public InvadersController controller;
 
     
-    private void Awake()
-    {
-        
-    }
-
-    private void Start()
-    {
-    }
-
-    private void Update()
-    {
-        
-    }
-    
     private void Hit()
     {
         Instantiate(explosionFX, transform.position, quaternion.identity, invadersGameObject.transform);
         controller.speed += 0.025f;
+        controller.InvadersLeft--;
         Destroy(gameObject);
     }
+    
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -39,7 +28,7 @@ public class Invader : MonoBehaviour
         else if (other.CompareTag("Bunker"))
         {
             other.gameObject.SetActive(false);
-            Destroy(gameObject);
+            Hit();
         }
         else if (other.CompareTag("BorderLeft"))
         {

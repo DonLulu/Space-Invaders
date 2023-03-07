@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8827057820756593673}
   - component: {fileID: 8827057820756593672}
   - component: {fileID: 8827057820756593671}
-  - component: {fileID: 6161936928069685931}
+  - component: {fileID: -2620772245463760528}
   m_Layer: 11
   m_Name: Missile
   m_TagString: Untagged
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 8827057820756593669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -134,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.375, y: 0.75}
   m_EdgeRadius: 0
---- !u!114 &6161936928069685931
+--- !u!114 &-2620772245463760528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +143,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8827057820756593669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b02e3b611e0b54aaeaafe98c3a758e, type: 3}
+  m_Script: {fileID: 11500000, guid: 061d9edbbd24453c82f01b63f6976d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  destroyed: 0
+  speed: 5
   explosionFX: {fileID: 3590337711588780916, guid: f76a50ee5720d804ab85500f00ac6e69, type: 3}

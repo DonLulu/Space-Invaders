@@ -13,6 +13,8 @@ TagManager:
   - Invader2
   - Invader3
   - Invader4
+  - BorderDown
+  - player
   layers:
   - Default
   - TransparentFX
